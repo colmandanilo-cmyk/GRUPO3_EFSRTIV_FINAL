@@ -1,4 +1,4 @@
-# El .gitignore de la raiz del repositorio ignora *.bat; aqui se vuelven a incluir
+# Los scripts .bat de Windows forman parte del proyecto
 !*.bat
 
 # Backend

@@ -1,6 +1,6 @@
 # NOVA TECH – Sistema de Monitoreo y Vigilancia para Obras
 
-Proyecto académico del Grupo 4 (CIBERTEC). Este proyecto es independiente del que ocupa la raíz del repositorio y vive completo dentro de esta carpeta.
+Proyecto académico (CIBERTEC).
 
 ## Proyecto
 
