@@ -1,10 +1,10 @@
-# NOVA TECH – Sistema de Monitoreo y Vigilancia para Obras
+# TIENDA NOVA – Sistema de Monitoreo y Vigilancia para Obras
 
 Proyecto académico (CIBERTEC).
 
 ## Proyecto
 
-NOVA TECH es una plataforma web para un centro de monitoreo que vigila obras de construcción a distancia. Cada obra tiene una estación autónoma con cámaras de seguridad, un panel solar, un banco de baterías, una antena Starlink como conexión principal y un módem 4G de respaldo.
+TIENDA NOVA es una plataforma web para un centro de monitoreo que vigila obras de construcción a distancia. Cada obra tiene una estación autónoma con cámaras de seguridad, un panel solar, un banco de baterías, una antena Starlink como conexión principal y un módem 4G de respaldo.
 
 Desde el navegador, el personal del centro de monitoreo puede:
 
@@ -20,7 +20,7 @@ Desde el navegador, el personal del centro de monitoreo puede:
 
 Una obra en construcción suele estar en un lugar sin red eléctrica ni internet fijo, con materiales y maquinaria que hay que proteger de noche y los fines de semana. Una estación con energía solar y conexión satelital resuelve la vigilancia en el sitio, pero alguien tiene que mirar lo que pasa, enterarse cuando una cámara se cae o la batería se agota, y saber si la estación sigue conectada.
 
-NOVA TECH reúne esa información en un solo lugar. Cuando algo cambia, el sistema lo registra como evento, decide si requiere atención y, si corresponde, crea una alerta con su severidad. Si Starlink se cae, la estación pasa sola al 4G y la plataforma lo muestra. Así una persona puede supervisar varias obras a la vez y actuar sobre lo importante.
+TIENDA NOVA reúne esa información en un solo lugar. Cuando algo cambia, el sistema lo registra como evento, decide si requiere atención y, si corresponde, crea una alerta con su severidad. Si Starlink se cae, la estación pasa sola al 4G y la plataforma lo muestra. Así una persona puede supervisar varias obras a la vez y actuar sobre lo importante.
 
 ## Arquitectura
 
@@ -85,7 +85,7 @@ La primera instalación tarda unos minutos por las descargas. Si un paso falla, 
 ## Ejecución
 
 1. Hacer doble clic en `start_app.bat`.
-2. Se abren tres ventanas: "NOVA TECH - Backend", "NOVA TECH - Simulador" y "NOVA TECH - Frontend". No hay que cerrarlas mientras se usa el sistema.
+2. Se abren tres ventanas: "TIENDA NOVA - Backend", "TIENDA NOVA - Simulador" y "TIENDA NOVA - Frontend". No hay que cerrarlas mientras se usa el sistema.
 3. Cuando todo responde, el navegador se abre en http://localhost:5173.
 4. Iniciar sesión con alguno de los usuarios de la tabla siguiente.
 
