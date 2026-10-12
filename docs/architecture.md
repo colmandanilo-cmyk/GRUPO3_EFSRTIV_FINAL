@@ -1,6 +1,6 @@
-# Arquitectura de NOVA TECH
+# Arquitectura de TIENDA NOVA
 
-NOVA TECH es una plataforma web para vigilar obras de construcción que tienen una estación autónoma: cámaras, panel solar, batería, antena Starlink y un módem 4G de respaldo. Como el proyecto es académico y no hay equipos físicos, un simulador en Python hace de esos dispositivos. El resto del sistema funciona igual que funcionaría con equipos reales.
+TIENDA NOVA es una plataforma web para vigilar obras de construcción que tienen una estación autónoma: cámaras, panel solar, batería, antena Starlink y un módem 4G de respaldo. Como el proyecto es académico y no hay equipos físicos, un simulador en Python hace de esos dispositivos. El resto del sistema funciona igual que funcionaría con equipos reales.
 
 Todo corre en una sola computadora con Windows y no usa servicios en la nube, Docker ni colas de mensajes.
 
@@ -67,7 +67,7 @@ flowchart TB
     SL["Starlink"] --> GW
     G4["4G"] --> GW
     GW -- "mismo JSON de /api/ingest" --> A["API Java"]
-    A --> N["Sistema NOVA TECH<br/>servicios, SQLite y React"]
+    A --> N["Sistema TIENDA NOVA<br/>servicios, SQLite y React"]
 ```
 
 | Capa | Hoy | Con equipos reales |

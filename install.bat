@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM NOVA TECH - Instalacion en Windows 10 / 11
+REM TIENDA NOVA - Instalacion en Windows 10 / 11
 REM
 REM Verifica Java, Python y Node.js, instala las dependencias del
 REM simulador y del frontend, compila el backend y crea la base de
@@ -12,14 +12,14 @@ REM dependencias). Despues, start_app.bat funciona sin conexion.
 REM ============================================================
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
-title NOVA TECH - Instalacion
+title TIENDA NOVA - Instalacion
 
 set "ROOT=%~dp0"
 set "VENV_PY=%ROOT%simulator\.venv\Scripts\python.exe"
 
 echo.
 echo ============================================================
-echo  NOVA TECH - Sistema de Monitoreo y Vigilancia para Obras
+echo  TIENDA NOVA - Sistema de Monitoreo y Vigilancia para Obras
 echo  Instalacion
 echo ============================================================
 echo.

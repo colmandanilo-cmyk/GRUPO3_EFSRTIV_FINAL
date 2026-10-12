@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * Punto de entrada del backend de NOVA TECH.
+ * Punto de entrada del backend de TIENDA NOVA.
  *
  * Al arrancar: crea la base SQLite si no existe (schema.sql), carga los datos
  * iniciales si la base esta vacia (DataSeeder) y publica la API REST en

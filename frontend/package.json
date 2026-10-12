@@ -2,7 +2,7 @@
   "name": "novatech-frontend",
   "private": true,
   "version": "1.0.0",
-  "description": "NOVA TECH - Interfaz web del Sistema de Monitoreo y Vigilancia para Obras",
+  "description": "TIENDA NOVA - Interfaz web del Sistema de Monitoreo y Vigilancia para Obras",
   "type": "module",
   "scripts": {
     "dev": "vite",

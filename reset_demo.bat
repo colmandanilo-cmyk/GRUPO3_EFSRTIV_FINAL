@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM NOVA TECH - Volver al estado inicial de la demostracion
+REM TIENDA NOVA - Volver al estado inicial de la demostracion
 REM
 REM 1. Detiene la aplicacion (stop_app.bat).
 REM 2. Borra la base de datos SQLite (novatech.db y sus archivos -wal y -shm).
@@ -14,14 +14,14 @@ REM de la instalacion. La configuracion vuelve a sus valores iniciales.
 REM ============================================================
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
-title NOVA TECH - Reinicio de la demostracion
+title TIENDA NOVA - Reinicio de la demostracion
 
 set "ROOT=%~dp0"
 set "DB=%ROOT%backend\data\novatech.db"
 
 echo.
 echo ============================================================
-echo  NOVA TECH - Volver a los datos iniciales
+echo  TIENDA NOVA - Volver a los datos iniciales
 echo ============================================================
 echo.
 echo Se borraran todos los datos registrados (alertas, incidencias,
@@ -55,7 +55,7 @@ for %%f in ("%DB%" "%DB%-wal" "%DB%-shm") do (
 )
 if exist "%DB%" (
     echo   No se pudo borrar backend\data\novatech.db: otro programa lo esta usando.
-    echo   Cierre las ventanas de NOVA TECH y vuelva a intentarlo.
+    echo   Cierre las ventanas de TIENDA NOVA y vuelva a intentarlo.
     goto fail
 )
 echo   OK

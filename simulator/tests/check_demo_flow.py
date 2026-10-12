@@ -352,7 +352,7 @@ class DemoFlow:
         ]
 
     def run(self):
-        print("NOVA TECH - Verificación del escenario de demostración (sección 56)\n")
+        print("TIENDA NOVA - Verificación del escenario de demostración (sección 56)\n")
         failed = 0
         for number, (title, action) in enumerate(self.steps(), start=1):
             try:

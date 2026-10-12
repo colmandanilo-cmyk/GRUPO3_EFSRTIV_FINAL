@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM NOVA TECH - Pruebas automaticas
+REM TIENDA NOVA - Pruebas automaticas
 REM
 REM   run_tests.bat         pruebas del backend (JUnit) y del simulador (unittest)
 REM   run_tests.bat demo    ademas recorre el escenario de demostracion completo
@@ -11,7 +11,7 @@ REM backend\target\test-data\ y no modifican backend\data\novatech.db.
 REM ============================================================
 setlocal
 cd /d "%~dp0"
-title NOVA TECH - Pruebas
+title TIENDA NOVA - Pruebas
 
 set "BACKEND_RESULT=NO EJECUTADO"
 set "SIMULATOR_RESULT=NO EJECUTADO"
@@ -21,7 +21,7 @@ set "PYTHON=%~dp0simulator\.venv\Scripts\python.exe"
 
 echo.
 echo ============================================================
-echo  NOVA TECH - Pruebas automaticas
+echo  TIENDA NOVA - Pruebas automaticas
 echo ============================================================
 
 REM ---------------- 1. Backend Java ----------------

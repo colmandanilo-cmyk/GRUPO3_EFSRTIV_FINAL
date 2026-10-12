@@ -12,7 +12,7 @@ export default function Sidebar({ open, onNavigate, activeAlerts }) {
       <div className="sidebar-brand">
         <img src={logo} alt="" />
         <div>
-          <strong>NOVA TECH</strong>
+          <strong>TIENDA NOVA</strong>
           <span>Centro de Monitoreo de Seguridad</span>
         </div>
       </div>

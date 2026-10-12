@@ -14,7 +14,7 @@
     <groupId>com.novatech</groupId>
     <artifactId>novatech-backend</artifactId>
     <version>1.0.0</version>
-    <name>NOVA TECH - Backend</name>
+    <name>TIENDA NOVA - Backend</name>
     <description>API REST del Sistema de Monitoreo y Vigilancia para Obras</description>
 
     <properties>

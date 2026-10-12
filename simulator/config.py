@@ -1,5 +1,5 @@
 """
-Configuracion del simulador de NOVA TECH.
+Configuracion del simulador de TIENDA NOVA.
 
 Todos los valores de potencia, bateria, consumo, latencia, velocidad, senal,
 autonomia y FPS son DEMOSTRATIVOS. No describen productos comerciales reales

@@ -102,7 +102,7 @@ export default function ReportsPage() {
       {report && (
         <div className="stack">
           <div className="print-only">
-            <h1>NOVA TECH · {report.title}</h1>
+            <h1>TIENDA NOVA · {report.title}</h1>
           </div>
           <div className="card card-body">
             <div className="row" style={{ justifyContent: 'space-between', marginBottom: 10 }}>

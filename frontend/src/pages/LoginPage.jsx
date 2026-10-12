@@ -46,7 +46,7 @@ export default function LoginPage() {
         <div>
           <div className="logo">
             <img src={logo} alt="" />
-            <strong>NOVA TECH</strong>
+            <strong>TIENDA NOVA</strong>
           </div>
           <h1>Centro de Monitoreo de Seguridad</h1>
           <p>Vigilancia remota de obras de construcción: cámaras, energía solar, batería y conectividad Starlink con respaldo 4G en una sola plataforma.</p>

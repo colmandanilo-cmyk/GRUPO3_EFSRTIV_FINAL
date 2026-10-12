@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * REGLAS DE NEGOCIO DE NOVA TECH, TODAS EN UN SOLO LUGAR (seccion 18 del enunciado).
+ * REGLAS DE NEGOCIO DE TIENDA NOVA, TODAS EN UN SOLO LUGAR (seccion 18 del enunciado).
  *
  * Si se quiere cambiar como se calcula el estado general, que severidad tiene
  * cada evento, cuando una bateria es "baja" o como funciona la contingencia

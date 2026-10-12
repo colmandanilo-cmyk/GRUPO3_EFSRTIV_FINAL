@@ -1,17 +1,17 @@
 @echo off
 REM ============================================================
-REM NOVA TECH - Iniciar la aplicacion
+REM TIENDA NOVA - Iniciar la aplicacion
 REM
 REM Abre tres ventanas, una por componente:
-REM   "NOVA TECH - Backend"    Java + Spring Boot en el puerto 8080
-REM   "NOVA TECH - Simulador"  Python, hace de camaras, energia y conectividad
-REM   "NOVA TECH - Frontend"   React (Vite) en el puerto 5173
+REM   "TIENDA NOVA - Backend"    Java + Spring Boot en el puerto 8080
+REM   "TIENDA NOVA - Simulador"  Python, hace de camaras, energia y conectividad
+REM   "TIENDA NOVA - Frontend"   React (Vite) en el puerto 5173
 REM y abre el navegador cuando todo responde.
 REM Para detener todo: stop_app.bat (o cerrar las tres ventanas).
 REM ============================================================
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
-title NOVA TECH - Inicio
+title TIENDA NOVA - Inicio
 
 set "ROOT=%~dp0"
 set "VENV_PY=%ROOT%simulator\.venv\Scripts\python.exe"
@@ -19,7 +19,7 @@ set "JAR=%ROOT%backend\target\novatech-backend.jar"
 
 echo.
 echo ============================================================
-echo  NOVA TECH - Sistema de Monitoreo y Vigilancia para Obras
+echo  TIENDA NOVA - Sistema de Monitoreo y Vigilancia para Obras
 echo ============================================================
 echo.
 
@@ -38,14 +38,14 @@ REM ---------------- Verificar los puertos ----------------
 call :port_in_use 8080
 if not errorlevel 1 (
     echo El puerto 8080 ya esta en uso.
-    echo Si NOVA TECH ya esta abierta, use stop_app.bat y vuelva a intentarlo.
+    echo Si TIENDA NOVA ya esta abierta, use stop_app.bat y vuelva a intentarlo.
     echo Si es otro programa, cierrelo antes de continuar.
     goto fail
 )
 call :port_in_use 5173
 if not errorlevel 1 (
     echo El puerto 5173 ya esta en uso.
-    echo Si NOVA TECH ya esta abierta, use stop_app.bat y vuelva a intentarlo.
+    echo Si TIENDA NOVA ya esta abierta, use stop_app.bat y vuelva a intentarlo.
     echo Si es otro programa, cierrelo antes de continuar.
     goto fail
 )
@@ -53,25 +53,25 @@ if not errorlevel 1 (
 REM ---------------- 1. Backend ----------------
 echo [1/3] Iniciando el backend Java...
 if not exist "%ROOT%backend\data\novatech.db" echo   Primera ejecucion: se crea la base de datos con los datos iniciales.
-start "NOVA TECH - Backend" /D "%ROOT%backend" cmd /k java -jar target\novatech-backend.jar
+start "TIENDA NOVA - Backend" /D "%ROOT%backend" cmd /k java -jar target\novatech-backend.jar
 call :wait_url http://127.0.0.1:8080/api/health 120
 if errorlevel 1 (
-    echo   El backend no respondio en 2 minutos. Revise la ventana "NOVA TECH - Backend".
+    echo   El backend no respondio en 2 minutos. Revise la ventana "TIENDA NOVA - Backend".
     goto fail
 )
 echo   OK: backend en http://localhost:8080/api
 
 REM ---------------- 2. Simulador ----------------
 echo [2/3] Iniciando el simulador Python...
-start "NOVA TECH - Simulador" /D "%ROOT%simulator" cmd /k .venv\Scripts\python.exe main.py
-echo   OK: simulador en marcha (ventana "NOVA TECH - Simulador")
+start "TIENDA NOVA - Simulador" /D "%ROOT%simulator" cmd /k .venv\Scripts\python.exe main.py
+echo   OK: simulador en marcha (ventana "TIENDA NOVA - Simulador")
 
 REM ---------------- 3. Frontend ----------------
 echo [3/3] Iniciando el frontend React...
-start "NOVA TECH - Frontend" /D "%ROOT%frontend" cmd /k npm run dev
+start "TIENDA NOVA - Frontend" /D "%ROOT%frontend" cmd /k npm run dev
 call :wait_url http://localhost:5173 60
 if errorlevel 1 (
-    echo   El frontend no respondio en 1 minuto. Revise la ventana "NOVA TECH - Frontend".
+    echo   El frontend no respondio en 1 minuto. Revise la ventana "TIENDA NOVA - Frontend".
     goto fail
 )
 echo   OK: frontend en http://localhost:5173
@@ -80,7 +80,7 @@ start "" http://localhost:5173
 
 echo.
 echo ============================================================
-echo  NOVA TECH esta en marcha
+echo  TIENDA NOVA esta en marcha
 echo ============================================================
 echo.
 echo  Frontend (abrir en el navegador):  http://localhost:5173

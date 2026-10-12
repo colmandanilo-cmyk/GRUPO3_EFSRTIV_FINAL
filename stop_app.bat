@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM NOVA TECH - Detener la aplicacion
+REM TIENDA NOVA - Detener la aplicacion
 REM
 REM Cierra las ventanas que abrio start_app.bat (backend, simulador y
 REM frontend). Como respaldo (por ejemplo con Windows Terminal, donde los
@@ -16,11 +16,11 @@ cd /d "%~dp0"
 set "ROOT=%~dp0"
 
 echo.
-echo Deteniendo NOVA TECH...
+echo Deteniendo TIENDA NOVA...
 
-call :close_window "NOVA TECH - Simulador" "Simulador"
-call :close_window "NOVA TECH - Frontend" "Frontend"
-call :close_window "NOVA TECH - Backend" "Backend"
+call :close_window "TIENDA NOVA - Simulador" "Simulador"
+call :close_window "TIENDA NOVA - Frontend" "Frontend"
+call :close_window "TIENDA NOVA - Backend" "Backend"
 
 REM Procesos que hayan quedado escuchando en los puertos de la aplicacion.
 call :stop_port 8080 java.exe
@@ -28,7 +28,7 @@ call :stop_port 5173 node.exe
 call :stop_simulator
 
 echo.
-echo NOVA TECH quedo detenida.
+echo TIENDA NOVA quedo detenida.
 if /i not "%~1"=="nopause" (
     echo.
     pause

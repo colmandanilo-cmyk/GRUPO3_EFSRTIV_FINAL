@@ -20,7 +20,7 @@ public class HealthController {
     @GetMapping("/api/health")
     public Map<String, Object> health() {
         Integer sites = jdbc.queryForObject("SELECT COUNT(*) FROM sites", Integer.class);
-        return Map.of("status", "UP", "application", "NOVA TECH", "sites", sites == null ? 0 : sites,
+        return Map.of("status", "UP", "application", "TIENDA NOVA", "sites", sites == null ? 0 : sites,
                 "serverTime", SqlUtils.now());
     }
 }

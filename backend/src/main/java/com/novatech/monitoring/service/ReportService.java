@@ -306,7 +306,7 @@ public class ReportService {
     /** CSV en UTF-8 con BOM (Excel en Windows muestra bien las tildes), separado por comas. */
     public byte[] toCsv(ReportResult report) {
         StringBuilder csv = new StringBuilder("﻿");
-        csv.append(line(List.of("NOVA TECH - " + report.title()))).append("\r\n");
+        csv.append(line(List.of("TIENDA NOVA - " + report.title()))).append("\r\n");
         csv.append(line(List.of("Período", SqlUtils.ts(report.from()) + " a " + SqlUtils.ts(report.to())))).append("\r\n");
         for (SummaryItem item : report.summary()) {
             csv.append(line(List.of(item.label(), item.value()))).append("\r\n");

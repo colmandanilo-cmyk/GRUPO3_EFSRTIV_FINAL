@@ -1,4 +1,4 @@
-# Base de datos de NOVA TECH
+# Base de datos de TIENDA NOVA
 
 La información vive en un único archivo SQLite: `backend/data/novatech.db`. No hay servidor de base de datos que instalar; el motor viene dentro del driver `sqlite-jdbc` que usa el backend. Solo Java abre ese archivo. React y el simulador Python nunca lo tocan: todo pasa por la API.
 

@@ -1,5 +1,5 @@
 -- ============================================================
--- NOVA TECH - Estructura de la base de datos SQLite
+-- TIENDA NOVA - Estructura de la base de datos SQLite
 -- Se ejecuta en cada arranque; IF NOT EXISTS evita recrear tablas.
 -- Fechas: texto 'YYYY-MM-DD HH:MM:SS' en hora local.
 -- Booleanos: INTEGER 0/1.

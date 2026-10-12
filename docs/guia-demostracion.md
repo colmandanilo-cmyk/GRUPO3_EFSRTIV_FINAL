@@ -1,12 +1,12 @@
 # Guía de demostración
 
-Guion para presentar NOVA TECH en unos 15 minutos. Sigue los 30 pasos del escenario de la sección 56 del enunciado y dice qué hacer en cada pantalla y qué debería verse.
+Guion para presentar TIENDA NOVA en unos 15 minutos. Sigue los 30 pasos del escenario de la sección 56 del enunciado y dice qué hacer en cada pantalla y qué debería verse.
 
 ## Antes de empezar
 
 1. Ejecutar `reset_demo.bat` el mismo día de la presentación. Así las cuatro obras arrancan en OPERACIÓN NORMAL y los gráficos muestran 24 horas de historial recién generado. Al final pregunta si se inicia la aplicación: responder S.
 2. Si la aplicación ya estaba instalada y los datos están limpios, alcanza con `start_app.bat`.
-3. Esperar a que se abra el navegador en http://localhost:5173. Deben quedar abiertas tres ventanas: "NOVA TECH - Backend", "NOVA TECH - Simulador" y "NOVA TECH - Frontend". No cerrarlas durante la demostración.
+3. Esperar a que se abra el navegador en http://localhost:5173. Deben quedar abiertas tres ventanas: "TIENDA NOVA - Backend", "TIENDA NOVA - Simulador" y "TIENDA NOVA - Frontend". No cerrarlas durante la demostración.
 4. Opcional, para confirmar que todo responde: `run_tests.bat demo` recorre los mismos 30 pasos por API en menos de un minuto. Si se usa, conviene ejecutarlo antes de `reset_demo.bat`, porque deja registradas alertas e incidencias de prueba.
 
 Una orden del laboratorio tarda entre 1 y 2 segundos en ejecutarse y la pantalla se actualiza cada 5 segundos. Si algo no aparece de inmediato, esperar un momento antes de repetir la acción.
@@ -17,7 +17,7 @@ Una orden del laboratorio tarda entre 1 y 2 segundos en ejecutarse y la pantalla
 
 | Paso | Qué hacer | Qué se ve |
 |---|---|---|
-| 1. Ejecutar la aplicación | `start_app.bat` (o `reset_demo.bat` y responder S) | Pantalla de inicio de sesión de NOVA TECH |
+| 1. Ejecutar la aplicación | `start_app.bat` (o `reset_demo.bat` y responder S) | Pantalla de inicio de sesión de TIENDA NOVA |
 | 2. Iniciar sesión como administrador | Correo `admin@novatech.local`, contraseña `Admin123*`, INICIAR SESIÓN. También se puede desplegar "Cuentas de demostración" y elegir la cuenta | Dashboard; arriba a la derecha, "Administrador del Sistema" |
 | 3. Ver cuatro obras | Menú Obras | OBRA-001 a OBRA-004 con cliente, ubicación, estado, batería y conexión |
 | 4. Ver dashboard completo | Menú Dashboard | Indicadores (obras, cámaras 12/12, disponibilidad, alertas, batería, conectividad), gráficos de cámaras, alertas de 24 horas, batería por obra y conectividad, tabla de obras y últimas alertas |

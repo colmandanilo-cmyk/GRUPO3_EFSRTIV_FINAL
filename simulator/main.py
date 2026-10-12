@@ -1,5 +1,5 @@
 """
-NOVA TECH - Simulador de dispositivos.
+TIENDA NOVA - Simulador de dispositivos.
 
 Reemplaza temporalmente a los equipos fisicos de cada obra (camaras, panel
 solar, bateria, Starlink y modem 4G). Cada pocos segundos:
@@ -94,7 +94,7 @@ def send_telemetry(client, station):
 
 def run():
     print("=" * 72)
-    print(" NOVA TECH - Simulador de dispositivos (valores demostrativos)")
+    print(" TIENDA NOVA - Simulador de dispositivos (valores demostrativos)")
     print(f" Backend: {config.BACKEND_URL}")
     print(" Detener con Ctrl + C")
     print("=" * 72, flush=True)

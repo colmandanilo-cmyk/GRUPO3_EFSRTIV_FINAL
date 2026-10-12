@@ -1,4 +1,4 @@
-# NOVA TECH – Etapa 1: diseño y estructura del proyecto
+# TIENDA NOVA – Etapa 1: diseño y estructura del proyecto
 
 Sistema de Monitoreo y Vigilancia para Obras · Proyecto académico
 Etapa 1 de 7 · Documento de diseño previo a la implementación · 24/09/2026
@@ -27,7 +27,7 @@ Las referencias del tipo §14 remiten a las secciones numeradas del enunciado.
 
 | Tema | Decisión | Motivo |
 |---|---|---|
-| Ubicación | Todo el sistema vive en `novatech-monitoring/`, dentro del repositorio `Grupo4_LCD_FINAL` | El repositorio ya tiene en su raíz otro proyecto (Radar de Oportunidades en Compras Públicas, en Streamlit). NOVA TECH no modifica ninguno de esos archivos |
+| Ubicación | Todo el sistema vive en `novatech-monitoring/`, dentro del repositorio `Grupo4_LCD_FINAL` | El repositorio ya tiene en su raíz otro proyecto (Radar de Oportunidades en Compras Públicas, en Streamlit). TIENDA NOVA no modifica ninguno de esos archivos |
 | Backend | Java 17 + Spring Boot 3.5 | Última línea 3.x de Spring Boot, la más documentada en material de estudio |
 | Acceso a datos | Spring JDBC (`JdbcTemplate`) con SQL explícito | SQLite no tiene dialecto oficial en Hibernate; el SQL a la vista deja ver qué se guarda |
 | Base de datos | SQLite, archivo `backend/data/novatech.db` creado y poblado por Java | No hay servidor de base de datos que instalar (§9) |
@@ -138,7 +138,7 @@ flowchart TB
     SL["Router Starlink"] --> GW
     G4["Módem 4G"] --> GW
     GW -- "mismo JSON de /api/ingest" --> A["API Java"]
-    A --> N["Sistema NOVA TECH: servicios, SQLite, React"]
+    A --> N["Sistema TIENDA NOVA: servicios, SQLite, React"]
 ```
 
 ### 1.3 Tecnologías y versiones
@@ -599,7 +599,7 @@ Pantallas:
 
 | Ruta | Pantalla | Contenido | Roles |
 |---|---|---|---|
-| `/login` | Inicio de sesión | "NOVA TECH", "Centro de Monitoreo de Seguridad", correo, contraseña, botón INICIAR SESIÓN y acceso rápido a las cuentas de demostración | Público |
+| `/login` | Inicio de sesión | "TIENDA NOVA", "Centro de Monitoreo de Seguridad", correo, contraseña, botón INICIAR SESIÓN y acceso rápido a las cuentas de demostración | Público |
 | `/dashboard` | DASHBOARD GENERAL | 7 KPIs de §14, 4 gráficos, tabla de obras con su estado general, últimas alertas | Todos |
 | `/obras` | OBRAS MONITOREADAS | Tabla con las columnas de §15, filtros (activa, mantenimiento, sin conexión) y búsqueda por nombre, cliente o ubicación. Alta y edición | Todos; edición solo administrador |
 | `/obras/:id` | CENTRO DE CONTROL – [obra] | Indicador ESTADO GENERAL y 8 pestañas: Vista general, Cámaras, Energía, Comunicaciones, Eventos, Alertas, Incidencias, Telemetría | Todos; pestaña Incidencias: administrador y supervisor |
